@@ -1,0 +1,147 @@
+/* demo */
+.input-wrapper {
+    display: flex;
+  }
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    width: 50%;
+    margin: 29px;
+  }
+  button {
+    padding: 12px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color:white;
+  }
+  button {
+    background-color: #8c80f8;
+  }
+  button[disabled] {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required,
+  .form__field:invalid {
+    box-shadow: none;
+  }
+  table {
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  th {
+    text-align: left;
+  }
+  
+  thead {
+    th {
+      background-color: #545592;
+    }
+  }
+  
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+    td {
+      position: relative;
+      &:hover {
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -9999px;
+          bottom: -9999px;
+          background-color: rgba(255, 255, 255, 0.2);
+          z-index: -1;
+        }
+      }
+    }
+  }
+  header {
+    padding: 14px;
+    text-align: center;
+    background: #5b7cb9;
+    color: white;
+    font-size: 20px;
+  }
+  .table-data {
+    margin: 12px;
+  }
+  .no-data{
+    color: white;
+    font-size: 20px;
+    margin: 12px;
+  }
+  
+  .invalid{
+    color:white;
+  }
+  
